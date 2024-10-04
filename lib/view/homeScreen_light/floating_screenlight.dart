@@ -31,13 +31,13 @@ class FloatingScreenlight extends StatelessWidget {
         fontSize: 21),),
         actions: [Icon(Icons.search,color: Colorconstants.mainWhite,size: 23,),
         SizedBox(width: 20,),
-        Icon(Icons.search,color: Colorconstants.mainWhite,size: 23,),
+        Icon(Icons.sort_by_alpha,color: Colorconstants.mainWhite,size: 23,),
         SizedBox(width: 15,)],
       ),
       floatingActionButton: FloatingActionButton(onPressed:() { 
       },
       backgroundColor: Colorconstants.blue1,
-      child: Icon(Icons.search,color: Colorconstants.mainWhite,),
+      child: Icon(Icons.person_add,color: Colorconstants.mainWhite,),
       
       ),
       body:Column(
@@ -52,7 +52,7 @@ class FloatingScreenlight extends StatelessWidget {
             child: Column(
               children: [
                 Row(children: [
-                   Icon(Icons.search,
+                   Icon(Icons.people_outline,color: Colorconstants.mainblack.withOpacity(0.5),
                   ),
                    SizedBox(width:25 ,),
                    Text("New Group",
@@ -62,20 +62,20 @@ class FloatingScreenlight extends StatelessWidget {
                 ],),
                 SizedBox(height: 17,),
                            Row(children: [
-                   Icon(Icons.search,
+                   Icon(Icons.person_add_outlined,color: Colorconstants.mainblack.withOpacity(0.5),
                   ),
                    SizedBox(width:25 ,),
-                   Text("New Group",
+                   Text("New Contact",
                    style: TextStyle(color: Colorconstants.mainblack,
                    fontSize: 18,
                    fontWeight: FontWeight.normal),),
                 ],),
                 SizedBox(height: 17,),
                            Row(children: [
-                   Icon(Icons.search,
+                   Icon(Icons.speaker_group_outlined,color: Colorconstants.mainblack.withOpacity(0.5),
                   ),
                    SizedBox(width:25 ,),
-                   Text("New Group",
+                   Text("New Channel",
                    style: TextStyle(color: Colorconstants.mainblack,
                    fontSize: 18,
                    fontWeight: FontWeight.normal),),

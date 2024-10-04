@@ -5,6 +5,7 @@ import 'package:telegram_cloneapp/view/loginScreen.dart/choose_country.dart';
 
 import 'package:telegram_cloneapp/view/loginScreen.dart/login_screen.dart';
 import 'package:telegram_cloneapp/view/loginScreen.dart/otpscreen.dart';
+import 'package:telegram_cloneapp/view/start_Messagingscreen/start_messaging.dart';
 
 
 class Splashscreen extends StatefulWidget {
@@ -19,8 +20,8 @@ class _SplashscreenState extends State<Splashscreen> {
   void initState(){
     Future.delayed(Duration(seconds: 6)).then((value){
       Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => 
-      ChooseCountry(
-        countryname: '', code: '', flagcode: '',
+      StartMessaging(
+        
       ),));
     });
     super.initState();

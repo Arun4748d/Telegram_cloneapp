@@ -18,7 +18,7 @@ class _StartMessagingState extends State<StartMessaging> {
   final _controller =PageController();
 
    void _startscreen(int index){
-        Navigator.push(context, MaterialPageRoute(builder:(context) => ChooseCountry(
+        Navigator.pushReplacement(context, MaterialPageRoute(builder:(context) => ChooseCountry(
         countryname:datac.CountryList[index]["countryname"],
            code:datac.CountryList[index]["code"],
             flagcode:datac.CountryList[index]["flagcode"],
@@ -39,9 +39,9 @@ class _StartMessagingState extends State<StartMessaging> {
           Expanded(
             flex: 1,
             child: PageView.builder(
-              itemCount:startScreen.screenList.length ,
+              itemCount:startScreen.screenList.length,
               controller: _controller,
-              itemBuilder: (context, index) =>   telegram_intro_screen(
+              itemBuilder: ( context, index) =>   telegram_intro_screen(
                          startScreen.screenList[index]["imaurl"]!,
                          startScreen.screenList[index]["textH"]!,
                          startScreen.screenList[index]["text1"]!,
@@ -55,6 +55,7 @@ class _StartMessagingState extends State<StartMessaging> {
                 child: Column(
                   children: [
    SmoothpageIndicator_Section(),
+   SizedBox(height:50 ),
                  
    StartMessagingButton_section(),     
                   ],
@@ -89,7 +90,7 @@ class _StartMessagingState extends State<StartMessaging> {
 
   Container SmoothpageIndicator_Section() {
     return Container(
-              padding: EdgeInsets.only(bottom: 195,),
+              padding: EdgeInsets.only(bottom: 155,),
                child: Transform.scale(
                   scale: 0.38,
                   child: SmoothPageIndicator( 
@@ -109,7 +110,7 @@ class _StartMessagingState extends State<StartMessaging> {
       child:
        Column(   
        children: [  
-         SizedBox(height: 164,),
+         SizedBox(height: 119,),
    //  imagee
          Container(
            height: 123,

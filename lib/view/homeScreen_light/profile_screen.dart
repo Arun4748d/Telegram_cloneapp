@@ -30,7 +30,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   title: Row(
     children: [
       CircleAvatar(
-        backgroundImage: NetworkImage("https://example.com/avatar.jpg"),
+        backgroundImage: NetworkImage("https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg"),
       ),
       SizedBox(width: 10,),
       Column(
@@ -164,7 +164,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         SizedBox(height: 15.5,),
                         Row(
                           children: [
-                            Icon(Icons.chat_bubble_outline),
+                            Icon(Icons.wechat_outlined,color: Colorconstants.mainblack.withOpacity(0.5),),
                             SizedBox(width: 13,),
                             Text("Chat Settings",style: TextStyle(
                                   color: Colorconstants.mainblack,
@@ -176,7 +176,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         Divider(),
                            Row(
                           children: [
-                            Icon(Icons.https_outlined ),
+                            Icon(Icons.https_outlined,color: Colorconstants.mainblack.withOpacity(0.5), ),
                             SizedBox(width: 13,),
                             Text("Privacy and Security",style: TextStyle(
                                   color: Colorconstants.mainblack,
@@ -188,7 +188,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         Divider(),
                            Row(
                           children: [
-                            Icon(Icons.notifications_outlined),
+                            Icon(Icons.notifications_outlined,color: Colorconstants.mainblack.withOpacity(0.5),),
                             SizedBox(width: 13,),
                             Text("Notification and Sounds",style: TextStyle(
                                   color: Colorconstants.mainblack,
@@ -200,7 +200,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         Divider(),
                            Row(
                           children: [
-                            Icon(Icons.data_array,),
+                            Icon(Icons.data_array,color: Colorconstants.mainblack.withOpacity(0.5),),
                             SizedBox(width: 13,),
                             Text("Data and Storage",style: TextStyle(
                                   color: Colorconstants.mainblack,
@@ -212,7 +212,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         Divider(),
                            Row(
                           children: [
-                            Icon(Icons.chat_bubble_outline),
+                            Icon(Icons.battery_0_bar,color: Colorconstants.mainblack.withOpacity(0.5),),
                             SizedBox(width: 13,),
                             Text("Power Saving",style: TextStyle(
                                   color: Colorconstants.mainblack,
@@ -224,7 +224,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         Divider(),
                            Row(
                           children: [
-                            Icon(Icons.folder_outlined),
+                            Icon(Icons.folder_outlined,color: Colorconstants.mainblack.withOpacity(0.5),),
                             SizedBox(width: 13,),
                             Text("Chat Folder",style: TextStyle(
                                   color: Colorconstants.mainblack,
@@ -236,7 +236,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         Divider(),
                            Row(
                           children: [
-                            Icon(Icons.devices_outlined),
+                            Icon(Icons.devices_outlined,color: Colorconstants.mainblack.withOpacity(0.5),),
                             SizedBox(width: 13,),
                             Text("Devices",style: TextStyle(
                                   color: Colorconstants.mainblack,
@@ -248,7 +248,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         Divider(),
                            Row(
                           children: [
-                            Icon(Icons.language_outlined),
+                            Icon(Icons.language_outlined,color: Colorconstants.mainblack.withOpacity(0.5),),
                             SizedBox(width: 13,),
                             Text("Language",style: TextStyle(
                                   color: Colorconstants.mainblack,
@@ -288,7 +288,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           children: [
                             Row(
                                 children: [
-                                  Icon(Icons.chat_bubble_outline),
+                                  Icon(Icons.star,color: const Color.fromARGB(255, 43, 40, 140),),
                                   SizedBox(width: 13,),
                                   Text("Telegram Premium",style: TextStyle(
                                         color: Colorconstants.mainblack,
@@ -300,7 +300,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               Divider(),
                                   Row(
                                 children: [
-                                  Icon(Icons.chat_bubble_outline),
+                                  Icon(Icons.star,color: const Color.fromARGB(255, 248, 195, 2)),
                                   SizedBox(width: 13,),
                                   Text("My Stars",style: TextStyle(
                                         color: Colorconstants.mainblack,
@@ -312,7 +312,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               Divider(),
                                   Row(
                                 children: [
-                                  Icon(Icons.chat_bubble_outline),
+                                  Icon(Icons.chat_bubble_outline,color: Colorconstants.mainblack.withOpacity(0.5),),
                                   SizedBox(width: 13,),
                                   Text("Telegram Business",style: TextStyle(
                                         color: Colorconstants.mainblack,
@@ -337,7 +337,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               Divider(),
                                   Row(
                                 children: [
-                                  Icon(Icons.card_giftcard_outlined),
+                                  Icon(Icons.card_giftcard_outlined,color: Colorconstants.mainblack.withOpacity(0.5),),
                                   SizedBox(width: 13,),
                                   Text("Gift Premium",style: TextStyle(
                                         color: Colorconstants.mainblack,
@@ -378,7 +378,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         SizedBox(height: 15.5,),
                         Row(
                           children: [
-                            Icon(Icons.chat_outlined),
+                            Icon(Icons.chat_outlined,color: Colorconstants.mainblack.withOpacity(0.5),),
                             SizedBox(width: 13,),
                             Text("Ask a Question",style: TextStyle(
                                   color: Colorconstants.mainblack,
@@ -390,7 +390,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         Divider(),
                               Row(
                           children: [
-                            Icon(Icons.help_outline),
+                            Icon(Icons.help_outline,color: Colorconstants.mainblack.withOpacity(0.5),),
                             SizedBox(width: 13,),
                             Text("Telegram FAQ",style: TextStyle(
                                   color: Colorconstants.mainblack,
@@ -402,7 +402,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         Divider(),
                               Row(
                           children: [
-                            Icon(Icons.gpp_good_outlined ),
+                            Icon(Icons.gpp_good_outlined ,color: Colorconstants.mainblack.withOpacity(0.5),),
                             SizedBox(width: 13,),
                             Text("Privacy POlicy",style: TextStyle(
                                   color: Colorconstants.mainblack,

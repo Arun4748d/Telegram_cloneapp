@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:telegram_cloneapp/database.dart';
 import 'package:telegram_cloneapp/utils/constants/colorConstants.dart';
-import 'package:telegram_cloneapp/view/global_widgets/msg._listtile.dart';
+
 
 
 import 'package:telegram_cloneapp/view/homeScreen_light/drawer_light.dart';
 import 'package:telegram_cloneapp/view/homeScreen_light/floating_screenlight.dart';
 import 'package:telegram_cloneapp/view/homeScreen_light/msg_list_light.dart';
+import 'package:telegram_cloneapp/view/messaging_screen/messagingScreen.dart';
 
 
 
@@ -71,7 +72,9 @@ class _Homescreen_lightState extends State<Homescreen_light> {
             ),
           ),
          ),
-       body: ListView.separated(itemBuilder: (context, index) => 
+       body: ListView.separated(
+        itemCount:database.telegramList.length,
+        itemBuilder: (context, index) => 
        msg_listtile_light(
 
         imageurl:database.telegramList[index]["imageurl"],
@@ -79,12 +82,22 @@ class _Homescreen_lightState extends State<Homescreen_light> {
          time: database.telegramList[index]["time"],
           subtitle: database.telegramList[index]["subtitle"], 
          notification: database.telegramList[index]["notification"],
+
+         onCardTaped: () {
+          Navigator.pushReplacement(context, MaterialPageRoute(builder:(context) => Messagingscreen(
+             imageurl:database.telegramList[index]["imageurl"],
+            title: database.telegramList[index]["title"],
+             
+               time: database.telegramList[index]["time"],
+
+            ),));
+         },
        ),
         separatorBuilder: (context, index) => Container(
        height: 0.4,
        color: Colors.black.withOpacity(0.8),
                   ),
-                   itemCount: 20),
+                  ),
        
     );
   }

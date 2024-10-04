@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:telegram_cloneapp/main.dart';
 import 'package:telegram_cloneapp/utils/constants/colorConstants.dart';
-import 'package:telegram_cloneapp/view/homeScreen_dark/homescreen_dark.dart';
+
 import 'package:telegram_cloneapp/view/homeScreen_light/profile_screen.dart';
 
 
@@ -39,11 +39,8 @@ class _MyHeaderDrawerState extends State<MyHeaderDrawer_light > {
                   onTap: () {
                     Navigator.push(context, MaterialPageRoute(builder: (context) => ProfileScreen(),));
                   },
-                  child: CircleAvatar(radius: 35,backgroundImage: NetworkImage("https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg"),)),                  
-                 IconButton(onPressed:() {
-                   Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Homescreen_dark(),));
-                 }, icon: Icon(Icons.dark_mode,color: Colorconstants.mainWhite,
-                  ))      ,     
+                  child: CircleAvatar(radius: 30,backgroundImage: NetworkImage("https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg"),)),                  
+                  Icon(Icons.dark_mode,color: Colorconstants.mainWhite,),
                 
               ],
             ),

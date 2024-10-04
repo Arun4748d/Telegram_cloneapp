@@ -15,6 +15,7 @@ class ChooseCountry extends StatefulWidget {
 }
 
 class _ChooseCountryState extends State<ChooseCountry> {
+   bool isDarkModeEnabled = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(

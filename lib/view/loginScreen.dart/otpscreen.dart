@@ -21,51 +21,58 @@ class _OtpscreenState extends State<Otpscreen> {
         backgroundColor: Colorconstants.mainWhite,
       ),
       backgroundColor: Colorconstants.mainWhite,
-body:  Column( 
-        children: [
-            Center(
-            child: Container(
-              height: 75,
-              width: 75,
-// Image Section
-              decoration: BoxDecoration(
-                image: DecorationImage(
-            image: AssetImage("assets/images/otpscreen.jpg"),
-            fit: BoxFit.cover,
+body:  Padding(
+  padding: const EdgeInsets.only(bottom: 35,),
+  child: Column( 
+          children: [
+              Center(
+              child: Container(
+                height: 75,
+                width: 75,
+  // Image Section
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+              image: AssetImage("assets/images/otpscreen.jpg"),
+              fit: BoxFit.cover,
+                  ),
                 ),
-              ),
-            ),  
-          ),
-// Text Enter code
-          SizedBox(height: 11,),
-          Text("Enter code",style: TextStyle(
-            color: Colorconstants.mainblack,
-            fontWeight: FontWeight.bold,
-            fontSize: 17,
-          ),),
-// Text
-           SizedBox(height: 12,),
-           Text("sent an SMS with activation code to your phone $phoneno",style: TextStyle(color: Colorconstants.mainblack,
-                fontSize: 14,)),
-                SizedBox(height: 25,),
-                Row(
-                 mainAxisAlignment: MainAxisAlignment.center,
-                  children: 
-                    List.generate(5 ,(index) => 
-                          otpTypingBox(context, index),                   
-                    ),
-                ),
-// Didn't get the code Section
-                SizedBox(height: 520,),
-                Text("Didn't get the code?",
-                style: TextStyle(
-                  color: Colorconstants.blue2,
-                  fontWeight: FontWeight.w600,
-                  fontSize: 15,
-             ),
-           )       
-        ]
-      )     
+              ),  
+            ),
+  // Text Enter code
+            SizedBox(height: 11,),
+            Text("Enter code",style: TextStyle(
+              color: Colorconstants.mainblack,
+              fontWeight: FontWeight.bold,
+              fontSize: 17,
+            ),),
+  // Text
+             SizedBox(height: 12,),
+                  Text("Please enter code we have sent to your ",style: TextStyle(color: Colorconstants.mainblack,
+                  fontSize: 14,)),
+                 
+
+             Text(" phone no $phoneno",style: TextStyle(color: Colorconstants.mainblack,
+                  fontSize: 14,)),
+                  SizedBox(height: 25,),
+                  Row(
+                   mainAxisAlignment: MainAxisAlignment.center,
+                    children: 
+                      List.generate(5 ,(index) => 
+                            otpTypingBox(context, index),                   
+                      ),
+                  ),
+  // Didn't get the code Section
+                  Spacer(),
+                  Text("Didn't get the code?",
+                  style: TextStyle(
+                    color: Colorconstants.blue2,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 15,
+               ),
+             )       
+          ]
+        ),
+)     
     );
   }
 
