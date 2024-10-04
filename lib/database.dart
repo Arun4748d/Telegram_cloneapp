@@ -4,28 +4,28 @@ class database {
 
 static List telegramList = [
   {
-    "imageurl": "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg",
-    "title": "Arun",
+    "imageurl": "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "title": "Abhi",
     "subtitle": "where are you",
     "time": "01:10",
     "notification": "5",
   },
   {
-    "imageurl": "https://images.pexels.com/photos/123456/pexels-photo-123456.jpeg",
+    "imageurl": "https://images.pexels.com/photos/839011/pexels-photo-839011.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "title": "John",
     "subtitle": "Hey! Did you see my message?",
     "time": "02:15",
     "notification": "2",
   },
   {
-    "imageurl": "https://images.pexels.com/photos/234567/pexels-photo-234567.jpeg",
+    "imageurl": "https://images.pexels.com/photos/1018911/pexels-photo-1018911.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "title": "Sarah",
     "subtitle": "Let’s meet tomorrow",
     "time": "03:00",
     "notification": "1",
   },
   {
-    "imageurl": "https://images.pexels.com/photos/345678/pexels-photo-345678.jpeg",
+    "imageurl": "https://images.pexels.com/photos/1018911/pexels-photo-1018911.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "title": "Mike",
     "subtitle": "Can you send me the files?",
     "time": "04:45",
