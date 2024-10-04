@@ -87,7 +87,7 @@ class _StartMessagingState extends State<StartMessaging> {
                                    ),
                        );
   }
-
+// smoothPage_Indicator 
   Container SmoothpageIndicator_Section() {
     return Container(
               padding: EdgeInsets.only(bottom: 155,),

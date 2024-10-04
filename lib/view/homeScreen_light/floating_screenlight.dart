@@ -113,7 +113,6 @@ class FloatingScreenlight extends StatelessWidget {
 
   ListTile floatScreen({required String imageurl, required String title, required String time}) {
     return ListTile(
-   
              leading:   CircleAvatar(backgroundImage: NetworkImage(imageurl)),
               title: Text(title,
                   style: TextStyle(color: Colorconstants.mainblack,
@@ -122,7 +121,9 @@ class FloatingScreenlight extends StatelessWidget {
                   subtitle: Text("last seen at $time",
                   style: TextStyle(color: Colorconstants.mainblack.withOpacity(0.6),
                 
-                  fontSize:16, ),),
+                  fontSize:16, 
+                  backgroundColor: Colorconstants.mainWhite
+                  ),),
          
         );
   }

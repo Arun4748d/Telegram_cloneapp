@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:telegram_cloneapp/database.dart';
+
 import 'package:telegram_cloneapp/utils/constants/colorConstants.dart';
-import 'package:telegram_cloneapp/view/messaging_screen/messagingScreen.dart';
+
 
 // ignore: must_be_immutable
 class msg_listtile_light extends StatelessWidget {

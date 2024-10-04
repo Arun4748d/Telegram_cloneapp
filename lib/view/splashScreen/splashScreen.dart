@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:telegram_cloneapp/utils/constants/colorConstants.dart';
-import 'package:telegram_cloneapp/view/homeScreen_light/homeScreen_light.dart';
-import 'package:telegram_cloneapp/view/loginScreen.dart/choose_country.dart';
-
-import 'package:telegram_cloneapp/view/loginScreen.dart/login_screen.dart';
-import 'package:telegram_cloneapp/view/loginScreen.dart/otpscreen.dart';
 import 'package:telegram_cloneapp/view/start_Messagingscreen/start_messaging.dart';
 
 
